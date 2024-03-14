@@ -21,7 +21,6 @@ function escopo() {
     function adiconarTarefasSalvas() {
         const tarefas = localStorage.getItem('tarefas');
         const listaDeTarefas = JSON.parse(tarefas)
-        console.log(listaDeTarefas)
         for (const item of listaDeTarefas) {
             ul.appendChild(formatLi(item))
         }
