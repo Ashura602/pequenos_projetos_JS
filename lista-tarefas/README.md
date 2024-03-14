@@ -23,12 +23,6 @@ Users should be able to:
 
 -Close the window and when he comes back the items will be there
 
-### Screeshot
-
-### Links
-
-- Live Site URL: []()
-
 ## My process
 
 ### Built with
