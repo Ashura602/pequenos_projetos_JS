@@ -18,7 +18,9 @@
 
 ### The Challenge
 Users should be able to:
+
 -Add items pressing enter and the button
+
 -Close the window and when he comes back the items will be there
 
 ### Screeshot
