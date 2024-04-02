@@ -28,13 +28,13 @@ body{
     border-radius: 15px;
     padding: 15px;
 }
-article{
+#form-main article{
     display: flex;
     order: 1;
     flex-direction: column;
     margin: 45px 45px 0;
 }
-article h1{
+#form-main article h1{
     font-size: 50px;
     margin-bottom: 20px;
 }
@@ -42,14 +42,14 @@ p,li,h1{
     font-family: 'Roboto-Regular',sans-serif;
     font-weight: 400 400 700;
 }
-article p,li{
+#form-main article p,li{
     font-size: var(--p-fontsize);
 }
-article ul{
+#form-main article ul{
     margin: 10px 0 20px 0;
     list-style-type: none ;
 }
-article li{
+#form-main article li{
     background-image: url(assets/images/icon-list.svg);
     background-repeat: no-repeat;
     background-position: 0 50%;
@@ -86,6 +86,11 @@ button:hover{
     border-radius: 10px;
 }
 
+.error-msg{
+    font-size: 13px;
+    color: hsl(4, 100%, 67%);
+    margin: 0 0 0 45%;
+}
 
 /* Sucess Page*/
 #success-main{
@@ -109,10 +114,12 @@ button:hover{
 #success-main p{
     margin-bottom: 25px;
 }
-.error-msg{
-    font-size: 13px;
-    color: hsl(4, 100%, 67%);
-    margin: 0 0 0 45%;
+#success-main form{
+    display: flex;
+    order: 2;
+}
+#success-main button{
+    align-self: flex-end;
 }
 @media screen and (max-width: 800px){
     #form-main{
@@ -141,17 +148,19 @@ button:hover{
         border-radius: 0 0 10px 10px;
     }
     #success-main{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
+        display: none;
+        width: 85vw;
+        height: 85vh;
         margin: 0;
         border-radius: 0;
+        padding: 15%;
     }
-    #success-main form{
-        justify-self: flex-end;
+    #success-main h1{
+        font-size: 38px;
+        margin-bottom: 25px;
     }
+
     
 }
-.attribution { justify-self: flex-end;font-size: 11px; text-align: center; }
+.attribution { justify-self:flex-end;font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

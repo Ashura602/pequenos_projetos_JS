@@ -22,7 +22,7 @@ function escopo() {
         msg.innerText = "Valid email required";
         if(verifyEmail(email.value)){
             formMain.style.display = "none";
-            sucessMain.style.display = "flex";
+            sucessMain.style.display ="grid";
             sucessEmail.innerHTML = email.value;
         }else{
             email.style.background = 'hsl(4, 100%, 67%)';
